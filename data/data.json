@@ -1,0 +1,30 @@
+{
+  "contact": [],
+  "subscribe": [],
+  "previews": [
+    {
+      "id": 1,
+      "img": "images/joker-poster.jpg",
+      "name": "Joker",
+      "author": "Glenn Kenny"
+    },
+    {
+      "id": 2,
+      "img": "images/immigrationNation-poster.jpg",
+      "name": "Immigration Nation",
+      "author": "Brian Tallerico"
+    },
+    {
+      "id": 3,
+      "img": "images/theGodfather-poster.jpg",
+      "name": "The Godfather",
+      "author": "Roger Ebert"
+    },
+    {
+      "id": 4,
+      "img": "images/onceUponAtimeInHollywood.jpg",
+      "name": "Once Upon a Time...in Hollywood",
+      "author": "Brian Tallerico"
+    }
+  ]
+}

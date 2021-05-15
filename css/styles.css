@@ -1,0 +1,1110 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    min-width: 341px;
+}
+
+/* Navigation Bar CSS */
+header{
+    list-style-type: none;
+    position: sticky;
+}
+
+ul{
+    float: right;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 15px;
+    transition: 0.5s ease-in;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul li a:hover{
+    color: #22e042;
+}
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container::after, .row::after, .container2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.logo img{
+    float: left;
+    width: 253px;
+    height: auto;
+    margin-left: -90px;
+    margin-top: -30px;
+}
+
+.site-header{
+    max-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Main Slider CSS */
+.main-slider{
+    width: 900px;
+    height: 450px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+}
+
+.slider-navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: flex;
+    display: -webkit-flex;  
+}
+
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+    background: #fff;
+}
+  
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+  
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;   
+    display: -webkit-flex;
+}
+  
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+  
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+/* Now Playing Section CSS */
+.row{
+    margin: 0 -10px;
+}
+
+.now-playing{
+    margin-top: 520px;
+}
+
+.now-playing-title h1{
+    text-align: center;
+    font-style: normal;
+    font-family: cursive;
+    padding-bottom: 13px;
+}
+
+.now-playing-title h1:hover{
+    color: #20ad4f;
+    transition: 0.4s;
+}
+
+.now img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    border-collapse: separate;
+} 
+
+.col-1{
+    width: 23%;
+    padding: 10px 10px;
+    float: left;
+    box-sizing: border-box;  
+    
+}
+.now-playing-caption{
+    font-size: 13px;
+    font-weight: 700;
+    text-shadow: 1px 1px #f5b8b8;
+}
+
+.now img:hover {
+    opacity: 70%;
+    transition: 0.5s;
+}
+
+.now-playing-caption:hover, .review-collections-caption:hover{
+    color: #d46e55;
+    text-shadow: 1px 1px #f1afaf;
+    transition: 0.6s;
+}
+/* Review Collection Section CSS */
+.review-collections-title{
+    text-align: center;
+    font-style: normal;
+    font-family: cursive;
+    padding-bottom: 15px;
+    margin-top: 45px;
+    font-size: 20px;
+}
+
+.col-2 img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.col-2 img:hover{
+    opacity: 75%;
+    transition: 0.5s;
+}
+.col-2{
+    width: 22%;
+    float: left;
+    padding: 0 10px;
+}
+
+.review-collections-caption{
+    font-size: 13px;
+    font-weight: 800;
+    text-shadow: 1px 1px #f5b8b8;
+}
+
+.review-collections-title h3:hover{
+    color: #5ddb87;
+    transition: 0.7s;
+}
+
+/* Latest Reviews Section CSS */
+.latest-reviews{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.latest-reviews-title h1{
+    text-align: center;
+    font-style: normal;
+    font-family: cursive;
+    padding-bottom: 13px;
+    margin-top: 60px;
+}
+.col-latest img{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 280px;
+    border-radius: 7px;
+}
+.col-latest{
+    width: 22%;
+    float: left;
+    padding: 10px 10px;
+}
+.latest-reviews-caption h1{
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 1px 1px #f5b8b8;
+    
+}
+.latest-reviews-caption p{
+    font-size: 14px;
+}
+
+.col-latest img:hover{
+    opacity: 75%;
+    transition: 0.6s;
+}
+.latest-reviews-caption h1:hover{
+    color: #f02143;
+}
+
+.latest-reviews-title h1:hover{
+    color: #5fb97d;
+    transition: 0.5s;;
+}
+
+
+/* Popular Reviews Section CSS */
+.popular-reviews{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.popular-reviews-title h1{
+    text-align: center;
+    font-style: normal;
+    font-family: cursive;
+    padding-bottom: 13px;
+    margin-top: 60px;
+}
+.col-popular img{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 280px;
+    border-radius: 7px;
+}
+.col-popular{
+    width: 22%;
+    float: left;
+    padding: 10px 10px;
+   
+}
+.popular-reviews-caption h1{
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 1px 1px #f5b8b8;
+    
+}
+.popular-reviews-caption p{
+    font-size: 14px;
+}
+
+.col-popular img:hover{
+    opacity: 75%;
+    transition: 0.6s;
+}
+.popular-reviews-caption h1:hover{
+    color: #f02143;
+}
+
+.popular-reviews-title h1:hover{
+    color: #24abb4;
+    transition: 0.5s;;
+}
+
+
+/* CSS for Collections Page  */
+.collections{
+    max-width: 100%;
+}
+.collections-title{
+    font-family: freight-big-pro;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 19px;
+}
+.collections-row img{
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform .3s;
+}
+.collections-row img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.collections-row{
+    /* width: 22%; */
+    padding: 0 10px;
+    display: block;
+    margin-left: 23%;
+    margin-bottom: 45px;
+    margin-right: 23%;
+}
+.collections-caption h1{
+    font-family: freight-big-pro;
+    font-size: 25px;
+    line-height: 34px;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 20px;
+}
+.collections-caption p{
+    font-size: 15px;
+    font-weight: 200;
+    display: block;
+    font-style: normal;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.collections-caption p1{
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    font-family: Georgia,Times New Roman,serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    margin-top: 8px;
+}
+.collections-title h1:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.7s;
+}
+
+.collections-nav ul{
+    flex-wrap: wrap;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+   
+}
+.collections-nav a{
+    border: 1px solid #e4dada;
+    border-radius: 4px;
+    color: #3a3653;
+    margin: 3px;
+   
+}
+.collections-nav-active a{
+    background-color: #11c72f;
+    color: white;
+}
+
+.collections-nav a:hover{
+    border: 1px solid black;
+    color: #3a3653;
+}
+
+/* CSS for TV/Streaming page  */
+.tv-streaming{
+    max-width: 100%;
+    justify-content: center;
+}
+.tv-streaming-title{
+    font-family: freight-big-pro;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 19px;
+}
+.tv-streaming-col{
+    width: 50%;
+    padding: 0 10px;
+    margin-bottom: 100px;
+}
+.tv-streaming-row img{
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform .3s;
+}
+.tv-streaming-row img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.tv-streaming-row{
+    display: flex;  
+}
+.tv-streaming-caption{
+    display: inline-block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+.tv-streaming-caption h1{
+    font-family: freight-big-pro;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 20px;
+}
+.tv-streaming-caption p{
+    font-size: 19px;
+    font-weight: 200;
+    display: block;
+    font-style: normal;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.tv-streaming-caption p1{
+    font-size: 20px;
+    line-height: 26px;
+    color: #333;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    font-family: Georgia,Times New Roman,serif;
+    font-weight: 500;
+    font-style: normal;
+    justify-content: center;
+    margin-top: 8px;
+}
+.tv-streaming-title h1:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.7s;
+}
+
+/* CSS for Great Movies page  */
+.great-movies{
+    margin-left: 10%;
+    margin-right: 10%; 
+}
+
+.great-movies-title h1{
+    font-family: freight-big-pro;
+    font-weight: 700;
+    text-align: center;
+    font-style: normal;
+    font-size: 40px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+}
+.col-great-movies img{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 280px;
+    border-radius: 7px;
+}
+.col-great-movies{
+    width: 22%;
+    float: left;
+    padding: 10px 10px;
+    margin-left: 12px;
+    margin-bottom: 50px;
+   
+}
+.great-movies-caption h1{
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: .5px .5px #44d167;
+    margin-bottom: 8px;   
+}
+.great-movies-caption p{
+    font-family: freight-big-pro;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.great-movies img:hover{
+    -webkit-filter:  drop-shadow(16px 16px 10px #000000e6);
+    filter:  drop-shadow(16px 16px 10px #000000e6);
+}
+.great-movies-caption h1:hover{
+    color: #ac1467;
+}
+
+.great-movies-title h1:hover{
+    animation-name: great-movies-header;
+    animation-duration: 3s;
+}
+@keyframes great-movies-header{
+    0%{
+        -webkit-transform: translate(10px,25px);
+        -ms-transform: translate(10px,25px);
+        -moz-transform: translate(10px,25px);
+        transform: translate(10px,25px)
+    }
+    25%{
+        -webkit-transform: translate(8px,20px);
+        -ms-transform: translate(8px,20px);
+        -moz-transform: translate(8px,20px);
+        transform: translate(8px,20px)
+    }
+    50%{
+        -webkit-transform: translate(6px,15px);
+        -ms-transform: translate(6px,15px);
+        -moz-transform:translate(6px,15px);
+        transform: translate(6px,15px)
+    }
+    100%{
+        -webkit-transform: translate(0px,0px);
+        -ms-transform: translate(0px,0px);
+        -moz-transform: translate(0px,0px);
+        transform: translate(0px,0px)
+    }
+}
+.great-movies-heading{
+    width: 600px;
+    font-family: Georgia,Times New Roman,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    line-height: 35px;
+    margin-bottom: 40px;
+    padding: 2px;
+    text-align: justify;
+}
+
+/* CSS for All Movies reviews page  */
+.all-reviews{
+    margin-left: 10%;
+    margin-right: 10%; 
+}
+
+.all-reviews-title h1{
+    font-family: freight-big-pro;
+    font-weight: 700;
+    text-align: center;
+    font-style: normal;
+    font-size: 40px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+}
+.col-all-reviews img{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 280px;
+    border-radius: 7px;
+}
+.col-all-reviews{
+    width: 22%;
+    float: left;
+    padding: 10px 10px;
+    margin-left: 12px;
+    margin-bottom: 50px;
+   
+}
+.all-reviews-caption h1{
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: .5px .5px #44d167;
+    margin-bottom: 8px;   
+}
+.all-reviews-caption p{
+    font-family: freight-big-pro;
+    font-size: 17px;
+    font-weight: 400;
+}
+.all-reviews-title{
+    margin-bottom: 30px;
+}
+.all-reviews img:hover{
+    -webkit-filter:  drop-shadow(16px 16px 10px #000000e6);
+    filter: drop-shadow(16px 16px 10px #000000e6)
+}
+.all-reviews-caption h1:hover{
+    color: #ac1467;
+}
+
+/* CSS for about us page  */
+.about-us{
+    align-content: center;
+    width: 700px;
+    margin: 0 auto;
+
+}
+.about-us-title h1{
+    font-family: freight-big-pro;
+    font-weight: 700;
+    text-align: center;
+    font-style: normal;
+    font-size: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+}
+.about-us-para p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 28px;
+    font-style: normal;
+    display: block;
+    margin-bottom: 70px;
+}
+
+/* css for contact us page  */
+.contact-form-title{
+    font-family: freight-big-pro;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    padding-bottom: 35px;
+    margin-top: 40px;
+
+}
+.contact-form{
+    margin: 30px  auto; /* t r b l*/
+    width: 600px;
+    padding: 25px;
+    
+}
+.contact-form-fields{
+    width: calc(100% - 24px);   
+    padding: 4px 10px; 
+    font-size: 17px; 
+}
+.contact-form div{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-form label{
+    color: #000000;
+    font-size: 20px; 
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.contact-form select{
+    width: 100%;
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+    vertical-align: top;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 4px 10px;
+}
+.contact-form button , input , textarea{
+    font-family: Georgia,Times New Roman,serif;
+}
+.contact-form button[type="submit"]{
+    background-color: #31e29e;
+    border: 1px solid #31e29e;
+    justify-content: center;
+    white-space: nowrap;
+    box-shadow: none;
+    font-size: 16px;
+    position: relative;
+    line-height: 1.5;
+    display: inline-flex;
+    padding: 5px 15px 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.contact-form button:hover{
+    border: 2px solid rgb(5, 2, 2);
+}
+.contact-form div{
+    margin-bottom: 30px;
+}
+.contact-form textarea{
+    display: block;
+    resize: vertical;
+    max-height: 640px;
+    min-height: 128px;
+}
+
+/* CSS for Subscribe section */
+.subscribe-form{
+    width: 800px;
+    max-width: 100%;
+    border: 4px solid black;
+    padding: 25px;
+    background-color: #080804;
+    margin: 50px auto;
+    border-radius: 5px; 
+    box-shadow: 0px 0px 0px 5px #FC5185;
+    transition: box-shadow 0.6s linear;
+}
+
+.subscribe-form:hover{
+    box-shadow: 0px 0px 0px 10px #FC5185;
+}
+
+.subscribe-form-group input{
+    padding: 5px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 4px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.subscribe-form-group{
+    max-width: 100%;
+    width: calc(100% - 25px);   
+    padding: 4px 10px;   
+}
+
+.subscribe-button{
+    background-color: #2cb1bb;
+    border: 3px solid transparent;
+    font-size: 20px;
+    border-radius: 4px;
+    border-style: none;
+    padding: 4px 10px;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    box-shadow: none;
+    font-family: Georgia,Times New Roman,serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.subscribe-button:hover{
+    color: turquoise;
+    background-color: white;
+    transition: 0.6s;
+}
+
+.subscribe-form-group label{
+    font-size: 23px;
+    font-family: freight-big-pro;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.subscribe-form div{
+    display: inline;
+}
+
+/* Page Footer Section CSS */
+.page-footer{
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 11.5px;
+    line-height: 17.5px;
+    color: #333;
+    margin-top: 4px;
+    margin-right: 8px;
+    margin-left: 8px;
+    text-align: center;
+}
+
+/* Responsive Designs CSS */
+
+@media screen and (max-width: 1130px){
+    .great-movies, .all-reviews, .latest-reviews{
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+    .col-great-movies, .col-all-reviews, .col-latest{
+        width: 19%;
+    } 
+}
+
+@media screen and (max-width: 1125px){
+    *{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .main-nav{
+        display: inline-block;
+    }
+    .main-slider{
+       visibility: hidden;
+    }
+    .now-playing{
+        margin-top: 10px;
+    }
+    .logo img{
+        margin-left: -41px;
+        margin-top: 30px;
+    }
+    .popular-reviews{
+        margin-left: 60px;
+        margin-right: 60px;
+    }  
+}
+
+@media screen and (max-width: 1000px){
+    .now-playing{
+        margin-left: 10%;
+    }
+    .col-1{
+        width: 42%;
+           
+    }
+    .now img{
+        max-width: 600px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 925px){
+    .now img{
+        max-width: 550px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 905px){
+    .popular-reviews{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .subscribe-form{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .col-great-movies, .col-all-reviews, .col-latest{
+        width: 32%;
+        margin-left: 10%;   
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .col-great-movies img, .col-all-reviews img, .col-latest img{
+        max-width: 700px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 856px){
+    .tv-streaming-caption h1{
+        margin-top: 2px;
+    }   
+}
+
+@media screen and (max-width: 833px){
+    .col-popular{
+        width: 48%;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 60px;
+    }
+    .col-popular img{
+        height: 500px;
+    }  
+}
+
+@media screen and (max-width: 813px){
+    .col-2{
+        width: 40%;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 756px){
+    .col-great-movies, .col-all-reviews, .col-latest{
+        margin-left: 50px;
+    }
+    .col-great-movies img, .col-all-reviews img, .col-latest img{
+        max-width: 500px;
+        height: 300px;
+    }
+    .great-movies-heading{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 754px){
+    .about-us{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 725px){
+    .col-popular{
+        margin-left: 24%;
+        margin-right: 24%;
+    }
+    .col-popular img{
+        width: 100%;
+        height: auto;
+    }
+    .logo img{
+        margin-left: 15%;
+        margin-bottom: -20px;
+    }
+}
+
+@media screen and (max-width: 715px){
+    .col-1{
+        width: 55%;
+        margin-left: 17%;
+    }
+    .now img{
+        max-width: 100%;
+        height: auto;
+    }  
+}
+
+@media screen and (max-width: 700px){
+    .tv-streaming-row{
+        display: block;
+    }
+    .tv-streaming-col{
+        margin-bottom: 30px;
+        margin-left: 20%;
+    }
+    .tv-streaming-row img{
+        max-width: 340px;
+    }
+    .collections-row img{
+        max-width: 340px;
+    }
+    .collections-row{
+        margin-left: 10%;
+    }
+    .subscribe-form{
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 663px){
+    .contact-form{
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 645px){
+    .col-great-movies, .col-all-reviews, .col-latest{
+        width: 47%;
+        margin-left: 20%;
+    }
+    .col-great-movies, .col-all-reviews img, .col-latest img{
+        max-width: 100%;
+        height: auto;   
+    }
+}
+
+@media screen and (max-width: 612px){
+    .col-2{
+        margin-left: 30%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .collections-nav{
+        justify-content: left;
+    }
+    .collections-nav a {
+        margin-left: 1px;
+        display: inline-block;
+    }
+    .logo img{
+        margin-left: 1px;
+    }
+}
+
+@media screen and (max-width: 554px){
+    .great-movies-heading{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 546px){
+    .about-us{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .tv-streaming-col{
+        margin-left: 10%;
+    }
+    .tv-streaming-col h1{
+        font-size: 25px;
+    }  
+}
+
+@media screen and (max-width: 500px){
+    .subscribe-form{
+        width: 230px;
+        margin-bottom: 30px;
+    }
+    .subscribe-form-group input{
+        padding: 2px;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .subscribe-form label{
+        font-size: 13px;  
+    }
+    .subscribe-button{
+        font-size: 15px;
+        padding: 2px 4px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .great-movies-heading{
+        width: 290px;
+        margin-left: 2px;
+    }
+}
+
+@media screen and (max-width: 444px){
+    .tv-streaming-col{
+        margin-left: 9px;
+    }
+    .tv-streaming-row img{
+        max-width: 280px;
+    }
+    .collections-row img{
+        max-width: 270px;
+    }
+    .collections-row{
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 438px){
+    .about-us{
+        width: 300px;
+    }
+}
