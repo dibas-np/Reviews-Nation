@@ -40,7 +40,7 @@ questions or give feedback.
 
 ## Demo
 
-To view the demo of this website [Click here](https://dibas-np.github.io/Reviews-Nation/index.html){:target="_blank"}
+To view the demo of this website [Click here](https://dibas-np.github.io/Reviews-Nation/index.html)
 
 
 ## Contributing
