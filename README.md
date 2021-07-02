@@ -38,6 +38,11 @@ questions or give feedback.
 
 * [@dibas-np](https://github.com/dibas-np) (Lead)
 
+## Demo
+
+To view the demo of this website [Click here](https://dibas-np.github.io/Reviews-Nation/index.html)
+
+
 ## Contributing
 This project doesn't require any pull requests. Feel free to fork this project and work on it.
 
